@@ -12,6 +12,30 @@
 
     <br>
 
-    <button>=</button>
+    <button onclick="onClick()">=</button>
   </body>
+  <script>
+  // console.log("darlaa");
+
+  function onClick(){
+    
+    var num1 =document.getElementById ("input-1");
+    var num2 =document.getElementById ("input-2");
+   
+
+    //2utgiin dotor bga utgiig integer bolgoh
+
+    var x = parseInt(num1.value);
+    var y = parseInt(num2.value);
+
+    var result = x*y;
+
+    var resultElement = document.getElementById("result");
+    resultElement.innerHTML = result;
+
+  }
+  </script>
+
+  
 </html>
+

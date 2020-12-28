@@ -12,6 +12,15 @@
 
     <br>
 
-    <button>=</button>
+    <button onclick="onClickButton()">=</button>
+    
+    <script>
+      function onClickButton() {
+        var input1 = document.getElementById("input-1").value;
+        var input2 = document.getElementById("input-2").value;
+        var res = parseInt(input1) * parseInt(input2);
+        document.getElementById("result").innerHTML = res;
+      }
+    </script>
   </body>
 </html>

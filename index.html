@@ -4,6 +4,16 @@
   <title>JS Intro</title>
 </head>
   <body>
+    <script>
+      function OnClickMultiply(){
+        var input1 = document.getElementById('input-1').value;
+        var input2 = document.getElementById('input-2').value;
+        var res = parseInt(input1) * parseInt(input2);
+        console.log('daragdlaa');
+        console.log(res);
+        document.getElementById('result').innerHTML = res;
+      }
+    </script>
     <input type="number" id="input-1">
     *
     <input type="number" id="input-2">
@@ -12,6 +22,6 @@
 
     <br>
 
-    <button>=</button>
+    <button onclick = 'OnClickMultiply()'>=</button>
   </body>
 </html>

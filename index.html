@@ -8,18 +8,30 @@
       function OnClickMultiply(){
         var input1 = document.getElementById('input-1').value;
         var input2 = document.getElementById('input-2').value;
-        var res = parseInt(input1) * parseInt(input2);
-        console.log('daragdlaa');
-        console.log(res);
+        var input3 = document.getElementById('input-3').value;
+        console.log(input2);
+        if(input2 == '*'){
+          var res = parseInt(input1) * parseInt(input3);
+        }
+        if(input2 == '+'){
+          var res = parseInt(input1) + parseInt(input3);
+        }
+        if(input2 == '-'){
+          var res = parseInt(input1) - parseInt(input3);
+        }
+        if(input2 == '/'){
+          var res = parseInt(input1) / parseInt(input3);
+        }
         document.getElementById('result').innerHTML = res;
       }
     </script>
     <input type="number" id="input-1">
-    *
-    <input type="number" id="input-2">
-    =
+    <br>
+    <input type="text" id="input-2">
+    <br>
+    <input type="number" id="input-3">
+    <br>
     <span id="result"></span>
-
     <br>
 
     <button onclick = 'OnClickMultiply()'>=</button>

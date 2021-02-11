@@ -3,15 +3,49 @@
 <head>
   <title>JS Intro</title>
 </head>
+<script>
+ function calc()
+  {
+    var a = document.getElementById('input-1').value;
+    var b = document.getElementById('input-3').value;
+                
+    var oper = document.getElementById('operator').value;
+                
+    if(oper === '+')
+    {
+       document.getElementById('result').value = a+b;
+    }
+                
+    if(oper === '-')
+    {
+      document.getElementById('result').value = a-b;
+    }
+                
+    if(oper === '/')
+    {
+       document.getElementById('result').value = a/b;
+    }
+                
+    if(oper === 'X')
+    {
+       document.getElementById('result').value = a*b;
+    }
+  }
+</script>
+
   <body>
-    <input type="number" id="input-1">
-    *
-    <input type="number" id="input-2">
-    =
-    <span id="result"></span>
+    <input type="number" id="input-1"/>
+       
+    <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="/">/</option>
+        <option value="X">X</option>
+    </select>
 
-    <br>
-
-    <button>=</button>
+    <input type="number" id="input-3"/>
+    
+    <button onclick="calc()">=</button>
+    <input type="text" id="result"/>
   </body>
 </html>

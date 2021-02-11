@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Intro</title>
+  <script>
+    function Multiply() {
+        var a = document.getElementById("input-1").value;
+        var b = document.getElementById("input-1").value;
+        var result = parseInt(a) * parseInt(b);
+        document.getElementById("res").innerHTML = result;
+    }
+</script>
+
+</head>
+  <body>
+    <input type="text" id="input-1" />
+    *
+    <input type="text" id="input-2" />
+    <input type="button" value="Хариу" onclick="Multiply()"/>
+    <span id="res"></span>
+  </body>
+</html>

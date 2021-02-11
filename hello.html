@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Intro</title>
+<script>
+    function onClickMultiply () {
+    var a = document.getElementById('input-1')
+    var b = document.getElementById('input-2')
+    var result = document.getElementById('result')
+    result.value = a.value * b.value;
+    document.getElementById('result').innerHTML = result.value;
+    }
+</script>
+</head>
+  <body>
+    <input type="number" id="input-1">
+    *
+    <input type="number" id="input-2">
+    =
+    <span id="result"></span>
+
+    <br>
+
+    <button onclick="onClickMultiply()">=</button>
+  </body>
+</html>
